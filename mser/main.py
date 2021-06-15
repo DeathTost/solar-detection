@@ -19,9 +19,9 @@ do_cropping = True
 # oxnard - 75
 # stockton - 94
 list_dirs = ['images_stockton', 'images_modesto','images_oxnard', 'images_fresno' ]
+# source: https://figshare.com/articles/dataset/Distributed_Solar_Photovoltaic_Array_Location_and_Extent_Data_Set_for_Remote_Sensing_Object_Identification/3385780/4
 
 def main():
-    os.chdir('C:\\Users\\Marcin\\Desktop\\DOK\\21L_ComputerVision\\mser')
     loading_start = time.time()
     load_data(list_dirs, use_entropy, do_cropping)
     loading_end = time.time()
